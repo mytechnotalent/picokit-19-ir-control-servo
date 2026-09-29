@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-19-ir-control-servo",
+  "eyebrow": "PICOKIT // LESSON 19",
+  "title": "PICOKIT // IR CONTROL SERVO",
+  "subtitle": "PRESET ANGLES + AUTHENTICATED HEARTBEAT",
+  "accent": "#2CFF24",
+  "dim": "#1B9E16",
+  "white": "#D6F6E0",
+  "cyan": "#7FD8E0",
+  "bg": "#031102",
+  "bg_edge": "#000500",
+  "icon": "servo",
+  "panel_status": "ANGLE 180  ·  SG90  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "REMOTE",
+      "value": "NEC"
+    },
+    {
+      "label": "SERVO",
+      "value": "GP14"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-33 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00019  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] key 0x47  angle 180  servo pwm",
+    "[+] ack sent  rssi -33  snr 9.0"
+  ],
+  "categories": [
+    "REMOTE",
+    "SERVO",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "ANG-01",
+      "label": "0x45",
+      "value": "0 deg"
+    },
+    {
+      "tag": "ANG-02",
+      "label": "0x46",
+      "value": "90 deg"
+    },
+    {
+      "tag": "ANG-03",
+      "label": "0x47",
+      "value": "180 deg"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ SERVO ]=="
+  ],
+  "layout": "stat",
+  "stat": "180"
+}
